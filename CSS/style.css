@@ -95,3 +95,12 @@ a:active { /* selected link */
 .img.logo{
   width: 350px;
 }
+#header {
+  background-color: #EEEEEE;
+}
+#contact {
+  background-color:#CCD4AE;
+}
+#workspace {
+  background-position: center;
+}
