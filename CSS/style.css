@@ -17,7 +17,7 @@ body {
   color:#000000;
 }
 h1,h2,h3,h4 {
-  font-family: 'Bebas Neue', cursive;
+  font-family: 'Bebas Neue', sans-serif;
   line-height: 1.2;
   color:#4F9843;
 }
@@ -82,7 +82,7 @@ a:active { /* selected link */
 .button:active {
   text-decoration: none;
 }
-.button.contact {
+.button.contact{
   background-color: transparent;
   color: #4F9843;
   text-transform: uppercase;
@@ -91,4 +91,7 @@ a:active { /* selected link */
 .button.contact:hover {
   background-color: #4F9843;
   color: #ffffff;
+}
+.img.logo{
+  width: 350px;
 }
