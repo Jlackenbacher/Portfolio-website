@@ -1,0 +1,94 @@
+/* Colors used
+
+/*Primary Color (Green):#4F9843;
+Secondary Color (Black):#000000;
+Third Color (Grey):#EEEEEE;
+Fourh Color (Olive):#CCD4AE;
+Button Bacground (Dark Grey):#675E5A;
+Button Font (White):#FFFFFF;/*
+========================================================================== */
+
+body {
+  margin: 10px;
+  font-family: freight-sans-pro, sans-serif;
+  font-size: 20px; /*Sets the font size to 20px */
+  font-weight: 400; /*Set the font weight to 400 */
+  line-height: 1.6; /* Sets the line-height to 1.6 * the font-size */
+  color:#000000;
+}
+h1,h2,h3,h4 {
+  font-family: 'Bebas Neue', cursive;
+  line-height: 1.2;
+  color:#4F9843;
+}
+ h1 {
+   font-size: 3.5em;
+   font-weight: 600;
+ }
+
+ h2 {
+   font-size: 2.5em;
+   font-weight: 600;
+ }
+
+ h3 {
+   font-size: 2em;
+   font-weight: 400;
+ }
+ h4 {
+   font-size: 1.75em;
+   font-weight: 400;
+ }
+ img {
+   width: 100%;
+ }
+
+ a {
+   color: #4F9843;
+   text-decoration: none; /* No underlining */
+ }
+ a:hover,
+ a:focus {
+   color: #675E5A;
+   text-decoration: underline; /* Underlining when hovering over a link */
+ }
+ a:visited { /* visited link */
+  color: #4F9843;
+}
+a:active { /* selected link */
+  color: #CCD4AE;
+}
+.button {
+  display: inline-block;
+  background-color: #4F9843;
+  color: #ffffff;
+  font-family: 'Bebas Neue', cursive;
+  font-weight: 400;
+  text-transform: uppercase;
+  padding: 10px;
+  border-radius: 3px;
+  border-bottom: 1px solid #4F9843;
+  transition: 0.2s opacity;
+}
+.button:hover,
+.button:focus {
+  opacity: 0.8; /* Reduces the opacity of the button to 80% */
+  text-decoration: none;
+}
+.button:visited {
+  opacity: 0.3; /* Reduces the opacity of the button to 30% */
+  text-decoration: none;
+}
+.button:active {
+  text-decoration: none;
+}
+.button.contact {
+  background-color: transparent;
+  color: #4F9843;
+  text-transform: uppercase;
+  border: 2px solid #4F9843;
+}
+.button.contact:hover {
+  background-color: #4F9843;
+  color: #ffffff;
+}
