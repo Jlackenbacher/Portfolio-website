@@ -7,7 +7,9 @@ Fourh Color (Olive):#CCD4AE;
 Button Bacground (Dark Grey):#675E5A;
 Button Font (White):#FFFFFF;/*
 ========================================================================== */
-
+* {
+  box-sizing: border-box;
+}
 body {
   margin: 10px;
   font-family: freight-sans-pro, sans-serif;
@@ -16,14 +18,26 @@ body {
   line-height: 1.6; /* Sets the line-height to 1.6 * the font-size */
   color:#000000;
 }
+
+header {
+  background-color: #EEEEEE;
+  text-align: center;
+padding: 10px 0;
+box-shadow: 0px 3px 3px 2px rgba(50, 50, 50, 0.3);
+position: fixed;
+}
+main {
+  padding-top: 133px;
+}
+
 h1,h2,h3,h4 {
   font-family: 'Bebas Neue', sans-serif;
   line-height: 1.2;
   color:#4F9843;
 }
  h1 {
-   font-size: 3.5em;
-   font-weight: 600;
+   font-size: 3 em;
+   font-weight: 400;
  }
 
  h2 {
@@ -35,6 +49,7 @@ h1,h2,h3,h4 {
    font-size: 2em;
    font-weight: 400;
  }
+
  h4 {
    font-size: 1.75em;
    font-weight: 400;
@@ -47,17 +62,41 @@ h1,h2,h3,h4 {
    color: #4F9843;
    text-decoration: none; /* No underlining */
  }
+
  a:hover,
  a:focus {
    color: #675E5A;
    text-decoration: underline; /* Underlining when hovering over a link */
  }
+
  a:visited { /* visited link */
   color: #4F9843;
 }
+
 a:active { /* selected link */
   color: #CCD4AE;
 }
+nav > ul {
+  list-style-type: none;
+  padding: 0;
+  display: inline-block;
+  width: 100%;
+}
+nav > ul > li {
+  display: inline-block;
+}
+nav > ul > li > a {
+  padding: 0 5px;
+  text-transform: uppercase;
+  font-weight: 400;
+  color: #4F9843;
+  font-size: 1em;
+}
+nav > ul > li > a:visited, a:hover, a:active {
+  opacity: 0.8; /* Reduces the opacity of the button to 80% */
+  text-decoration: none;
+}
+
 .button {
   display: inline-block;
   background-color: #4F9843;
@@ -70,8 +109,7 @@ a:active { /* selected link */
   border-bottom: 1px solid #4F9843;
   transition: 0.2s opacity;
 }
-.button:hover,
-.button:focus {
+.button:hover {
   opacity: 0.8; /* Reduces the opacity of the button to 80% */
   text-decoration: none;
 }
@@ -92,15 +130,37 @@ a:active { /* selected link */
   background-color: #4F9843;
   color: #ffffff;
 }
-.img.logo{
-  width: 350px;
+.logo{
+  max-width: 250px;
 }
-#header {
+/* Layout styling */
+.container {
+  padding: 0 15px;
+}
+.row {
+  margin: 25px 0; /* 25px top and bottom, 0 left and right */
+}
+.center {
+  text-align: center;
+}
+
+#herobanner {
   background-color: #EEEEEE;
+  padding: 20px 0;
+  display: inline-block;
+width: 100%;
+}
+
+#herobanner h1 {
+  text-align: center; /* Centers text */
+  margin: 0;
+  padding: 0.67em 0;
 }
 #contact {
   background-color:#CCD4AE;
 }
 #workspace {
-  background-position: center;
+  background-color: #EEEEEE;
 }
+#workspace .row {
+  padding-bottom: 25px; border-bottom: 1px solid #4a4a4a; }
