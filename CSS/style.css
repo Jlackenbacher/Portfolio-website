@@ -67,16 +67,16 @@ h1,h2,h3,h4 {
 
  a:hover,
  a:focus {
-   color: #675E5A;
+   color: #6ED65E;
    text-decoration: underline; /* Underlining when hovering over a link */
  }
 
  a:visited { /* visited link */
-  color: #4F9843;
+  color: #94D955;
 }
 
 a:active { /* selected link */
-  color: #CCD4AE;
+  color: #3A7031;
 }
 nav > ul {
   list-style-type: none;
