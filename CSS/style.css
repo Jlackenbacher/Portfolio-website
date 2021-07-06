@@ -187,6 +187,7 @@ nav > ul > li > a:visited, a:hover, a:active {
 .container {
   padding:0 10px ;
 }
+
 .row {
   margin: 25px 0; /* 25px top and bottom, 0 left and right */
 
@@ -207,7 +208,7 @@ nav > ul > li > a:visited, a:hover, a:active {
 }
 .intro {
   margin-top:0;
-  marking-bottom: 20px;
+  margin-bottom: 20px;
   line-height: 1.8em;
 }
 
@@ -239,7 +240,6 @@ width: 100%;
   padding:40px 0;
 }
 
-}
 #workspace {
   display: block;
   padding-top: 40px;
@@ -354,8 +354,15 @@ Large devices (1024px or larger)
   margin-right: auto;
 
 }
+.text { max-width: 800px;
+margin-left: auto;
+margin right:auto;}
+
 .col-lg-5 {
   width: 41.66%;
+}
+.col-lg-4 {
+  width: 33%;
 }
 .col-lg-7 {
   width: 58.33%;
