@@ -46,6 +46,7 @@ h1,h2,h3,h4 {
  h1 {
    font-size: 3em;
    font-weight: 400;
+   padding-top: 10px;
  }
 
  h2 {
@@ -98,6 +99,7 @@ nav > ul {
 }
 nav > ul > li {
   display: inline-block;
+  padding-right: 5px;
 }
 nav > ul > li > a {
   padding: 0 5px;
@@ -114,6 +116,9 @@ nav > ul > li > a:visited, a:hover, a:active {
 }
 
 /* Border X get width  */
+.borderXwidth li {
+  position: relative;
+}
 .borderXwidth a:before, .borderXwidth a:after
 {
     position: absolute;
@@ -160,6 +165,7 @@ nav > ul > li > a:visited, a:hover, a:active {
 .button:hover {
   opacity: 0.8; /* Reduces the opacity of the button to 80% */
   text-decoration: none;
+    color: #ffffff;
 }
 .button:visited {
   opacity: 0.3; /* Reduces the opacity of the button to 30% */
@@ -181,13 +187,17 @@ nav > ul > li > a:visited, a:hover, a:active {
 }
 .logo{
   max-width: 350px;
-  padding: 0 20px;
+  padding: 0px 20px;
+  margin-bottom: 5px;
 }
 /* Layout styling */
 .container {
   padding:0 10px ;
 }
-
+.text {
+  padding:0 20px 0;
+  margin-bottom: 5px;
+}
 .row {
   margin: 25px 0; /* 25px top and bottom, 0 left and right */
 
@@ -249,6 +259,7 @@ width: 100%;
 
 #workspace h2 {
   padding-bottom: 5px; border-bottom: 2px solid #4F9843;
+  margin:0px;
 }
 #workspace h3 {
   margin-top: 0;
@@ -264,14 +275,21 @@ width: 100%;
 #about-page h3
   {margin-top:0;
   }
-#workproject1 {
 
+#workproject1 ul {
+list-style-type: none;
+  line-height: 1.5em;
 }
-#workproject1 h2 {
-    padding-bottom: 5px; border-bottom: 2px solid #4F9843;
+
+#workproject1 h3 {
+  padding: 0px;
+  margin:0px;
 }
-#workproject1 span {
-  display: block;
+
+.text h2 {
+    padding-bottom: 0px;
+    border-bottom: 2px solid #4F9843;
+    margin:0px;
 }
   [class*="col-"] {
     float: left;
@@ -341,7 +359,21 @@ main {
   width: 50%;
   float: left;
 }
+.col-md-4 {
+  width: 33%;
+  float:left;
+}
+.text
+{max-width: 700px;
+margin-left: auto;
+margin-right: auto;
+padding:20px;
+}
 
+.footer
+{
+  align-content: center;
+}
 }
   /* ==============================
 Large devices (1024px or larger)
@@ -352,20 +384,19 @@ Large devices (1024px or larger)
   max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
-
 }
-.text { max-width: 800px;
-margin-left: auto;
-margin right:auto;}
 
 .col-lg-5 {
   width: 41.66%;
+  float: left;
 }
 .col-lg-4 {
   width: 33%;
+  float:left;
 }
 .col-lg-7 {
   width: 58.33%;
+  float:left;
 }
 
 }
