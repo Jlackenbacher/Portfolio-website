@@ -25,7 +25,7 @@ background-color: #FFFFFF;
 
 header {
   background-color: #EEEEEE;
-padding: 10px;
+padding: 10px 0 4px;
 box-shadow: 0px 3px 3px 1px rgba(50, 50, 50, 0.3);
 position: fixed;
 display: inline-block;
@@ -33,7 +33,7 @@ width: 100%;
 }
 
 main {
-  padding-top: 133px;
+  padding-top: 60px;
 
 }
 
@@ -75,7 +75,7 @@ h1,h2,h3,h4 {
 
  a:hover,
  a:focus {
-   color: #FFFFFF;
+   color: #CCD4AE;;
    text-decoration: underline; /* Underlining when hovering over a link */
  }
 
@@ -84,7 +84,7 @@ h1,h2,h3,h4 {
 }
 
 a:active { /* selected link */
-  color: #FFFFFF;
+  color: #CCD4AE;
 }
 nav {
   padding: 0 40px;
@@ -93,8 +93,7 @@ nav {
 nav > ul {
   list-style-type: none;
   padding: 0;
-  display: inline-block;
-  width: 100%;
+  margin: 0;
 }
 nav > ul > li {
   display: inline-block;
@@ -113,8 +112,19 @@ nav > ul > li > a:visited, a:hover, a:active {
   Color:#004B23;
   text-decoration:none;
 }
+.navtoggle.responsive nav {
+  padding: 24px 0 0;
+}
+.navtoggle.responsive li  {
+  display: block;
+  padding: 10px 0;
+  border-top: 1px solid #4F9843;
+}
+.navtoggle.responsive li:last-child  {
+  padding: 0 0 10px;
+}
 .navtoggle li:not(:last-child) {
-  display: none;
+  display:block;
 }
 .navtoggle, .navtoggle.responsive {
   position: relative;
@@ -126,40 +136,6 @@ nav > ul > li > a:visited, a:hover, a:active {
   font-size: 20px;
   padding-right: 0;
 }
-
-/* Border X get width  */
-.borderXwidth li {
-  position: relative;
-}
-.borderXwidth a:before, .borderXwidth a:after
-{
-    position: absolute;
-    opacity: 0;
-    width: 0%;
-    height: 2px;
-    content: '';
-    background: #004B23;
-    transition: all 0.3s;
-}
-
-.borderXwidth a:before
-{
-    left: 0px;
-    top: 0px;
-}
-
-.borderXwidth a:after
-{
-    right: 0px;
-    bottom: 0px;
-}
-
-.borderXwidth a:hover:before, .borderXwidth a:hover:after
-{
-    opacity: 1;
-    width: 100%;
-}
-/*End annimation */
 
 .button {
   display: inline-block;
@@ -198,8 +174,8 @@ nav > ul > li > a:visited, a:hover, a:active {
   color: #ffffff;
 }
 .logo{
-  max-width: 200px;
-  padding: 0px 10px;
+  max-width: 300px;
+  padding: 0px 20px;
   margin-bottom: 5px;
 }
 /* Layout styling */
@@ -356,26 +332,30 @@ list-style-type: none;
 
   header {
     text-align: unset;
-      padding: 20px 10px 13px;
+      padding: 20px 0px 10px;
   }
   nav {
   width: auto;
   float: right;
   margin-top: 4px;
 }
+nav > ul {
+  margin: 1em 0;
+}
 .logo{
-  max-width: 400px;
-  padding: 0px 20px;
+  max-width: 350px;
+  padding: 0px 10px;
   margin-bottom: 5px;
+}
+
+.navtoggle li:last-child {
+  display: none;
 }
 .navtoggle li:not(:last-child) {
   display: inline-block;
 }
-.navtoggle li:last-child {
-  display: none;
-}
 main {
-  padding-top: 99px;
+  padding-top: 56px;
 }
 .col-md-6 {
   width: 50%;
@@ -391,7 +371,39 @@ margin-left: auto;
 margin-right: auto;
 padding:20px;
 }
+/* Border X get width  */
+.borderXwidth li {
+  position: relative;
+}
+.borderXwidth a:before, .borderXwidth a:after
+{
+    position: absolute;
+    opacity: 0;
+    width: 0%;
+    height: 2px;
+    content: '';
+    background: #004B23;
+    transition: all 0.3s;
+}
 
+.borderXwidth a:before
+{
+    left: 0px;
+    top: 0px;
+}
+
+.borderXwidth a:after
+{
+    right: 0px;
+    bottom: 0px;
+}
+
+.borderXwidth a:hover:before, .borderXwidth a:hover:after
+{
+    opacity: 1;
+    width: 100%;
+}
+/*End annimation */
 .footer
 {
   align-content: center;
