@@ -264,6 +264,57 @@ a:active {
   line-height: 1.6em;
 }
 
+/* Slider animation */
+
+.carousel {
+  max-width: 900px;
+  min-width: 350px;
+  margin: 20px auto;
+  overflow: auto;
+}
+
+.arrow {
+  width: 30px;
+  height: 30px;
+}
+
+.slider-inner {
+  max-width: 800px;
+  min-width: 280px;
+  height: auto;
+  overflow: hidden;
+  float: left;
+}
+
+.slider-inner img {
+  display: none;
+  max-width: 800px;
+  min-width: 280px;
+  height: auto;
+}
+
+.slider-inner img.active {
+  display: inline-block;
+}
+
+.prev,
+.next {
+  float: left;
+  margin-top: 130px;
+  cursor: pointer;
+}
+
+.prev {
+  margin-right: -2px;
+  z-index: 100;
+}
+
+.next {
+  margin-left: -2px;
+  z-index: 100;
+}
+
+/* end Slider animation */
 #herobanner {
   background-color: #c3d938;
   padding: 10px 10px 0;
@@ -353,6 +404,50 @@ a:active {
 }
 
 #workproject1 h3 {
+  margin: 0;
+}
+
+#workproject1 {
+  margin: 40px 20px;
+}
+
+#workproject1 ul {
+  list-style-type: none;
+  line-height: 1.5em;
+  margin: 0;
+  padding: 0;
+}
+
+#workproject1 h2 {
+  padding-top: 10px;
+  padding-top: 5px;
+  border-top: 2px solid #1b365c;
+  margin: 0;
+}
+
+#workproject1 h3 {
+  margin: 0;
+}
+
+#workproject2 {
+  margin: 80px 20px;
+}
+
+#workproject2 ul {
+  list-style-type: none;
+  line-height: 1.5em;
+  margin: 0;
+  padding: 0;
+}
+
+#workproject2 h2 {
+  padding-top: 10px;
+  padding-top: 5px;
+  border-top: 2px solid #1b365c;
+  margin: 0;
+}
+
+#workproject2 h3 {
   margin: 0;
 }
 
@@ -529,6 +624,7 @@ a:active {
   }
 
   /* End annimation */
+
   .footer {
     align-content: center;
   }
@@ -567,6 +663,18 @@ a:active {
   }
 
   #workproject1 h4 {
+    font-size: 1.5em;
+  }
+
+  #workproject2 h2 {
+    font-size: 2.5em;
+  }
+
+  #workproject2 h3 {
+    font-size: 2em;
+  }
+
+  #workproject2 h4 {
     font-size: 1.5em;
   }
 
@@ -611,7 +719,25 @@ Large devices (1024px or larger)
   #aboutme h1 {
     padding: 80px 0 0;
   }
+
+  /* Slider animation */
+  .arrow {
+    width: 40px;
+    height: 40px;
+  }
+
+  .prev {
+    margin-right: 5px;
+  }
+
+  .next {
+    margin-left: 5px;
+  }
+
+  /* end Slider animation */
 }
+
+/* end Slider animation */
 
 /* ==============================
 X-large devices (1440px or larger)
