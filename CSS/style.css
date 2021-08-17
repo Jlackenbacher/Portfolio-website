@@ -720,6 +720,10 @@ Large devices (1024px or larger)
     padding: 80px 0 0;
   }
 
+  #workproject1 h1 {
+    padding: 60px 0 0;
+  }
+
   /* Slider animation */
   .arrow {
     width: 40px;
