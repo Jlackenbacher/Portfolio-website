@@ -1,5 +1,4 @@
 /* Colors used
-
 /*Primary Color (Green):#a4b630;
 Secondary Color (Blue):#1b365c;
 Third Color (Grey):#EEEEEE;
@@ -16,7 +15,7 @@ Black :000000;/*
 body {
   margin: 0;
   font-family: freight-sans-pro, sans-serif;
-  font-size: 20px;
+  font-size: 21px;
 
   /* Sets the font size to 18px */
   font-weight: 400;
